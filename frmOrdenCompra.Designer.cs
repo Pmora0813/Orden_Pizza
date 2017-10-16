@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.npdCantidad = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.cmbPasta = new System.Windows.Forms.ComboBox();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.npdCantidad = new System.Windows.Forms.NumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.chkQueso = new System.Windows.Forms.CheckBox();
-            this.chkChile = new System.Windows.Forms.CheckBox();
-            this.chkEnsalada = new System.Windows.Forms.CheckBox();
-            this.rbtnPersonal = new System.Windows.Forms.RadioButton();
-            this.rbtnMediana = new System.Windows.Forms.RadioButton();
             this.rbtnGrande = new System.Windows.Forms.RadioButton();
+            this.rbtnMediana = new System.Windows.Forms.RadioButton();
+            this.rbtnPersonal = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.chkEnsalada = new System.Windows.Forms.CheckBox();
+            this.chkChile = new System.Windows.Forms.CheckBox();
+            this.chkQueso = new System.Windows.Forms.CheckBox();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -68,30 +68,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pizza";
             // 
-            // npdCantidad
+            // cmbPasta
             // 
-            this.npdCantidad.Location = new System.Drawing.Point(99, 20);
-            this.npdCantidad.Name = "npdCantidad";
-            this.npdCantidad.Size = new System.Drawing.Size(112, 20);
-            this.npdCantidad.TabIndex = 0;
+            this.cmbPasta.FormattingEnabled = true;
+            this.cmbPasta.Location = new System.Drawing.Point(99, 86);
+            this.cmbPasta.Name = "cmbPasta";
+            this.cmbPasta.Size = new System.Drawing.Size(110, 21);
+            this.cmbPasta.TabIndex = 5;
             // 
-            // label1
+            // cmbTipo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Cantidad";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tipo";
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Location = new System.Drawing.Point(100, 51);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(110, 21);
+            this.cmbTipo.TabIndex = 4;
             // 
             // label3
             // 
@@ -102,21 +93,30 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Pasta";
             // 
-            // cmbTipo
+            // label2
             // 
-            this.cmbTipo.FormattingEnabled = true;
-            this.cmbTipo.Location = new System.Drawing.Point(100, 51);
-            this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(110, 21);
-            this.cmbTipo.TabIndex = 4;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Tipo";
             // 
-            // cmbPasta
+            // label1
             // 
-            this.cmbPasta.FormattingEnabled = true;
-            this.cmbPasta.Location = new System.Drawing.Point(99, 86);
-            this.cmbPasta.Name = "cmbPasta";
-            this.cmbPasta.Size = new System.Drawing.Size(110, 21);
-            this.cmbPasta.TabIndex = 5;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Cantidad";
+            // 
+            // npdCantidad
+            // 
+            this.npdCantidad.Location = new System.Drawing.Point(99, 20);
+            this.npdCantidad.Name = "npdCantidad";
+            this.npdCantidad.Size = new System.Drawing.Size(112, 20);
+            this.npdCantidad.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -130,58 +130,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tamaño";
             // 
-            // groupBox3
+            // rbtnGrande
             // 
-            this.groupBox3.Controls.Add(this.chkEnsalada);
-            this.groupBox3.Controls.Add(this.chkChile);
-            this.groupBox3.Controls.Add(this.chkQueso);
-            this.groupBox3.Location = new System.Drawing.Point(242, 18);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(132, 122);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Extras";
-            // 
-            // chkQueso
-            // 
-            this.chkQueso.AutoSize = true;
-            this.chkQueso.Location = new System.Drawing.Point(9, 18);
-            this.chkQueso.Name = "chkQueso";
-            this.chkQueso.Size = new System.Drawing.Size(57, 17);
-            this.chkQueso.TabIndex = 0;
-            this.chkQueso.Text = "Queso";
-            this.chkQueso.UseVisualStyleBackColor = true;
-            // 
-            // chkChile
-            // 
-            this.chkChile.AutoSize = true;
-            this.chkChile.Location = new System.Drawing.Point(9, 48);
-            this.chkChile.Name = "chkChile";
-            this.chkChile.Size = new System.Drawing.Size(49, 17);
-            this.chkChile.TabIndex = 1;
-            this.chkChile.Text = "Chile";
-            this.chkChile.UseVisualStyleBackColor = true;
-            // 
-            // chkEnsalada
-            // 
-            this.chkEnsalada.AutoSize = true;
-            this.chkEnsalada.Location = new System.Drawing.Point(9, 76);
-            this.chkEnsalada.Name = "chkEnsalada";
-            this.chkEnsalada.Size = new System.Drawing.Size(70, 17);
-            this.chkEnsalada.TabIndex = 2;
-            this.chkEnsalada.Text = "Ensalada";
-            this.chkEnsalada.UseVisualStyleBackColor = true;
-            // 
-            // rbtnPersonal
-            // 
-            this.rbtnPersonal.AutoSize = true;
-            this.rbtnPersonal.Location = new System.Drawing.Point(14, 31);
-            this.rbtnPersonal.Name = "rbtnPersonal";
-            this.rbtnPersonal.Size = new System.Drawing.Size(66, 17);
-            this.rbtnPersonal.TabIndex = 0;
-            this.rbtnPersonal.TabStop = true;
-            this.rbtnPersonal.Text = "Personal";
-            this.rbtnPersonal.UseVisualStyleBackColor = true;
+            this.rbtnGrande.AutoSize = true;
+            this.rbtnGrande.Location = new System.Drawing.Point(254, 30);
+            this.rbtnGrande.Name = "rbtnGrande";
+            this.rbtnGrande.Size = new System.Drawing.Size(60, 17);
+            this.rbtnGrande.TabIndex = 2;
+            this.rbtnGrande.TabStop = true;
+            this.rbtnGrande.Text = "Grande";
+            this.rbtnGrande.UseVisualStyleBackColor = true;
             // 
             // rbtnMediana
             // 
@@ -194,16 +152,58 @@
             this.rbtnMediana.Text = "Mediana";
             this.rbtnMediana.UseVisualStyleBackColor = true;
             // 
-            // rbtnGrande
+            // rbtnPersonal
             // 
-            this.rbtnGrande.AutoSize = true;
-            this.rbtnGrande.Location = new System.Drawing.Point(254, 30);
-            this.rbtnGrande.Name = "rbtnGrande";
-            this.rbtnGrande.Size = new System.Drawing.Size(60, 17);
-            this.rbtnGrande.TabIndex = 2;
-            this.rbtnGrande.TabStop = true;
-            this.rbtnGrande.Text = "Grande";
-            this.rbtnGrande.UseVisualStyleBackColor = true;
+            this.rbtnPersonal.AutoSize = true;
+            this.rbtnPersonal.Location = new System.Drawing.Point(14, 31);
+            this.rbtnPersonal.Name = "rbtnPersonal";
+            this.rbtnPersonal.Size = new System.Drawing.Size(66, 17);
+            this.rbtnPersonal.TabIndex = 0;
+            this.rbtnPersonal.TabStop = true;
+            this.rbtnPersonal.Text = "Personal";
+            this.rbtnPersonal.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.chkEnsalada);
+            this.groupBox3.Controls.Add(this.chkChile);
+            this.groupBox3.Controls.Add(this.chkQueso);
+            this.groupBox3.Location = new System.Drawing.Point(242, 18);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(132, 122);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Extras";
+            // 
+            // chkEnsalada
+            // 
+            this.chkEnsalada.AutoSize = true;
+            this.chkEnsalada.Location = new System.Drawing.Point(9, 76);
+            this.chkEnsalada.Name = "chkEnsalada";
+            this.chkEnsalada.Size = new System.Drawing.Size(70, 17);
+            this.chkEnsalada.TabIndex = 2;
+            this.chkEnsalada.Text = "Ensalada";
+            this.chkEnsalada.UseVisualStyleBackColor = true;
+            // 
+            // chkChile
+            // 
+            this.chkChile.AutoSize = true;
+            this.chkChile.Location = new System.Drawing.Point(9, 48);
+            this.chkChile.Name = "chkChile";
+            this.chkChile.Size = new System.Drawing.Size(49, 17);
+            this.chkChile.TabIndex = 1;
+            this.chkChile.Text = "Chile";
+            this.chkChile.UseVisualStyleBackColor = true;
+            // 
+            // chkQueso
+            // 
+            this.chkQueso.AutoSize = true;
+            this.chkQueso.Location = new System.Drawing.Point(9, 18);
+            this.chkQueso.Name = "chkQueso";
+            this.chkQueso.Size = new System.Drawing.Size(57, 17);
+            this.chkQueso.TabIndex = 0;
+            this.chkQueso.Text = "Queso";
+            this.chkQueso.UseVisualStyleBackColor = true;
             // 
             // btnCalcular
             // 
@@ -223,6 +223,7 @@
             this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label4
             // 

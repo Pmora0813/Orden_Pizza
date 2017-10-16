@@ -12,6 +12,7 @@ namespace OrdenPizza
 {
     public partial class Form1 : Form
     {
+        OrdenCompra orden;
         public Form1()
         {
             InitializeComponent();
@@ -80,7 +81,7 @@ namespace OrdenPizza
             }
 
 
-           OrdenCompra orden = OrdenCompraFactory.CrearOrden(cantidad, pizza, pasta, tamanno);
+           orden = OrdenCompraFactory.CrearOrden(cantidad, pizza, pasta, tamanno);
             
             if (chkChile.Checked)
             {
@@ -100,5 +101,21 @@ namespace OrdenPizza
             txtCalcularTotal.Text = orden.CalcularTotal().ToString();
 
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\Orden_Pizza.xml";
+            if (orden != null)
+            {
+                orden.guardar(ruta);
+                orden.trasformarXMLaHTMl();
+            }
+            else
+            {
+                MessageBox.Show("No se a guardado la Orden");
+                return;
+            }
+        }
     }
+    
 }

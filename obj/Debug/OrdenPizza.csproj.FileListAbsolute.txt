@@ -8,3 +8,13 @@ D:\C#\Semana 5\Orden Pizza\OrdenPizza\bin\Debug\OrdenPizza.exe
 D:\C#\Semana 5\Orden Pizza\OrdenPizza\bin\Debug\OrdenPizza.pdb
 D:\C#\Semana 5\Orden Pizza\OrdenPizza\obj\Debug\OrdenPizza.exe
 D:\C#\Semana 5\Orden Pizza\OrdenPizza\obj\Debug\OrdenPizza.pdb
+C:\Users\pmora_000\source\repos\Orden_Pizza\bin\Debug\OrdenPizza.exe.config
+C:\Users\pmora_000\source\repos\Orden_Pizza\bin\Debug\OrdenPizza.exe
+C:\Users\pmora_000\source\repos\Orden_Pizza\bin\Debug\OrdenPizza.pdb
+C:\Users\pmora_000\source\repos\Orden_Pizza\obj\Debug\OrdenPizza.csprojResolveAssemblyReference.cache
+C:\Users\pmora_000\source\repos\Orden_Pizza\obj\Debug\OrdenPizza.Form1.resources
+C:\Users\pmora_000\source\repos\Orden_Pizza\obj\Debug\OrdenPizza.Properties.Resources.resources
+C:\Users\pmora_000\source\repos\Orden_Pizza\obj\Debug\OrdenPizza.csproj.GenerateResource.Cache
+C:\Users\pmora_000\source\repos\Orden_Pizza\obj\Debug\OrdenPizza.csproj.CoreCompileInputs.cache
+C:\Users\pmora_000\source\repos\Orden_Pizza\obj\Debug\OrdenPizza.exe
+C:\Users\pmora_000\source\repos\Orden_Pizza\obj\Debug\OrdenPizza.pdb
