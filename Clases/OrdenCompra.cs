@@ -78,10 +78,17 @@ namespace OrdenPizza
 
             foreach (Extras ad in this.Lista_Extras)
             {
+                int costo = (int)ad;
                 XmlElement nEXTRA = xmlDoc.CreateElement("EXTRAS");
                 nEXTRA.SetAttribute("NOMBRE", ad.ToString());
 
+                XmlElement nCosto = xmlDoc.CreateElement("COSTO");
+                nCosto.InnerText = costo.ToString();
+
+               
+
                 nAdicionales.AppendChild(nEXTRA);
+                nEXTRA.AppendChild(nCosto);
             }
             XmlElement ntotal = xmlDoc.CreateElement("TOTAL");
             ntotal.InnerText = CalcularTotal().ToString("#,##0.00");
@@ -103,7 +110,7 @@ namespace OrdenPizza
             // Transformación del XMl utilizando XSLT
             XslCompiledTransform myXslTrans = new XslCompiledTransform();
             // Carga en memoria la lectura xslt
-            myXslTrans.Load("Xslt\\Orden_Pizza.xslt");
+            myXslTrans.Load("C:\\Users\\pmora_000\\Source\\Repos\\Orden_Pizza\\Xslt\\Orden_Pizza.xslt");
             // Transforma el archivo xml aun archivo HTML
             string rutaXML = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\Orden_Pizza.xml";
 

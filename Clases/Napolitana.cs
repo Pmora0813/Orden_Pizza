@@ -12,7 +12,7 @@ namespace OrdenPizza
         {
             get
             {
-                return "NAPOLITANA";
+                return "Napolitana";
             }
         }
 

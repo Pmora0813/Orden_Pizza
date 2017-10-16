@@ -18,3 +18,4 @@ C:\Users\pmora_000\source\repos\Orden_Pizza\obj\Debug\OrdenPizza.csproj.Generate
 C:\Users\pmora_000\source\repos\Orden_Pizza\obj\Debug\OrdenPizza.csproj.CoreCompileInputs.cache
 C:\Users\pmora_000\source\repos\Orden_Pizza\obj\Debug\OrdenPizza.exe
 C:\Users\pmora_000\source\repos\Orden_Pizza\obj\Debug\OrdenPizza.pdb
+C:\Users\pmora_000\Source\Repos\Orden_Pizza\bin\Debug\Xslt\Orden_Pizza.xslt

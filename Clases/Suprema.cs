@@ -12,7 +12,7 @@ namespace OrdenPizza
         {
             get
             {
-                return "SUPREMA";
+                return "Suprema";
             }
         }
 
